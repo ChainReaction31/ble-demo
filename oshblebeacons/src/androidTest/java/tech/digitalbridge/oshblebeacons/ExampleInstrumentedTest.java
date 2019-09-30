@@ -1,6 +1,7 @@
-package tech.digitalbridge.testble2;
+package tech.digitalbridge.oshblebeacons;
 
 import android.content.Context;
+
 import androidx.test.platform.app.InstrumentationRegistry;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 
@@ -21,6 +22,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
 
-        assertEquals("tech.digitalbridge.testble2", appContext.getPackageName());
+        assertEquals("tech.digitalbridge.oshblebeacons.test", appContext.getPackageName());
     }
 }
