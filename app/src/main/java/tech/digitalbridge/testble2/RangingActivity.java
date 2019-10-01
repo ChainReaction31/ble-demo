@@ -18,6 +18,12 @@ public class RangingActivity extends Activity {
     }
 
     @Override
+    protected void onDestroy() {
+        blebBeacon = null;
+        super.onDestroy();
+    }
+
+    @Override
     public void onResume() {
         super.onResume();
         blebBeacon.BeaconManagerSetup();
@@ -27,6 +33,7 @@ public class RangingActivity extends Activity {
     @Override
     public void onPause() {
         super.onPause();
+        blebBeacon.printBeaconList();
         blebBeacon.unbind();
     }
 }

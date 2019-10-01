@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contentLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <TableLayout
+        android:layout_width="409dp"
+        android:layout_height="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/beacon_name"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:minWidth="50dp"
+                android:text="Beacon Name"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="85dp"
+                android:layout_height="match_parent" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/beacon_mac"
+                android:layout_width="108dp"
+                android:layout_height="25dp"
+                android:text="MAC Address" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tx_pwr_title"
+                android:layout_width="73dp"
+                android:layout_height="wrap_content"
+                android:text="Tx Power:"
+                android:textAlignment="viewEnd"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tx_pwr_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textAlignment="viewStart"
+                android:textSize="12sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/rssi_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RSSI:"
+                android:textAlignment="viewEnd"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/rssi_value"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="TextView"
+                android:textAlignment="viewStart"
+                android:textSize="12sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </TableLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
